@@ -1,4 +1,4 @@
-# Insight Nexus — Retail Sales Intelligence & Forecasting
+# Insight Nexus - Retail Sales Intelligence & Forecasting
 
 Insight Nexus is an end-to-end retail analytics project that combines **data analysis, machine learning, SQL, and Power BI** to analyze historical store sales, forecast sales, and identify business-level patterns in prediction performance.
 
