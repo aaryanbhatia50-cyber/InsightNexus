@@ -50,66 +50,64 @@ Power BI Dashboard
        ↓
 Business Insights
 
-## 📊 Dashboard
+📊 Dashboard
 
 The Power BI dashboard is divided into three pages:
 
-### 1. Executive Overview
+1. Executive Overview
+
 Provides a high-level view of:
-- Total sales
-- Total predicted sales
-- Average sales
-- Actual vs predicted sales over time
-- Top-performing stores
-- Prediction status distribution
 
-### 2. Store Performance
+Total sales
+Total predicted sales
+Average sales
+Actual vs predicted sales over time
+Top-performing stores
+Prediction status distribution
+2. Store Performance
+
 Provides store-level analysis of:
-- Actual vs predicted sales
-- Prediction error over time
-- Store-level sales performance
-- Average prediction error
 
-### 3. Prediction Analysis
+Actual vs predicted sales
+Prediction error over time
+Store-level sales performance
+Average prediction error
+3. Prediction Analysis
+
 Focuses on:
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-- Sales vs prediction error
-- Over-prediction and under-prediction
 
-## 🤖 Model Performance
+Mean Absolute Error (MAE)
+Root Mean Squared Error (RMSE)
+R² Score
+Sales vs prediction error
+Over-prediction and under-prediction
+🤖 Model Performance
 
 The forecasting model achieved:
 
-| Metric | Value |
-|---|---:|
-| R² Score | 0.95 |
-| Mean Absolute Error | 557.87 |
-| Root Mean Squared Error | 899.52 |
+Metric	Value
+R² Score	0.95
+Mean Absolute Error	557.87
+Root Mean Squared Error	899.52
 
-## 📁 Project Files
+📁 Project Files
+01_data_audit.ipynb — Data exploration and auditing
+02_feature_engineering.ipynb — Feature preparation
+03_modeling.ipynb — Model training and evaluation
+Queries.sql — SQL business analysis
+dashboard.pbix — Power BI dashboard
+requirements.txt — Python dependencies
+store.csv — Store information
+xgb_sales_model.pkl — Trained forecasting model
+xgb_feature_columns.pkl — Model feature configuration
 
-- `01_data_audit.ipynb` — Data exploration and auditing
-- `02_feature_engineering.ipynb` — Feature preparation
-- `03_modeling.ipynb` — Model training and evaluation
-- `Queries.sql` — SQL business analysis
-- `dashboard.pbix` — Power BI dashboard
-- `requirements.txt` — Python dependencies
-- `store.csv` — Store information
-- `xgb_sales_model.pkl` — Trained forecasting model
-- `xgb_feature_columns.pkl` — Model feature configuration
+💡 Key Business Insights
+Sales and predicted sales show a strong overall relationship.
+Forecasting errors increase around higher-sales observations.
+Prediction accuracy varies across individual stores.
+Comparing over-prediction and under-prediction helps identify where forecasting performance needs closer attention.
 
-## 💡 Key Business Insights
-
-- Sales and predicted sales show a strong overall relationship.
-- Forecasting errors increase around higher-sales observations.
-- Prediction accuracy varies across individual stores.
-- Comparing over-prediction and under-prediction helps identify where forecasting performance needs closer attention.
-
-## 🚀 Setup
-
-```bash
+🚀 Setup
 git clone <your-repository-url>
 cd InsightNexus
 pip install -r requirements.txt
